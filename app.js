@@ -68,7 +68,7 @@ app.get('/about',(req, res) =>{
     //res.send('<p>about page<p>');
 });
 
-app.use(blogRoutes);
+app.use('/blogs', blogRoutes);
 
 //404 page deve ser o ultimo comando
 app.use((req, res) => {
