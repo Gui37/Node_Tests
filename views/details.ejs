@@ -9,8 +9,11 @@
     <div class="details content">
         <h2><%= blog.title %></h2>
         <div class="content"></div>
-            <p><%= blog.body%></p>
+        
+            <h3><%= blog.body%></h3>
+           
             <a class="delete" data-doc="<%= blog._id %>">Apagar</a>
+
         </div>
     <%- include('./partials/footer.ejs')%>
 
