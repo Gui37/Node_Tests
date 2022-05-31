@@ -9,7 +9,7 @@ dotenv.config();
 const app  = express();
 
 //connect to MongoDb
-const dbURI=urlpass;
+const dbURI=process.env.MONGO_URI;
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err));
