@@ -1,4 +1,4 @@
-const Blog = require('..models/blog')
+const Blog = require('..models/blog.js')
 //funções
 const blog_index = (req, res) => {
     Blog.find().sort({ createdAt: -1})
