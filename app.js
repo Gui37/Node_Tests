@@ -5,8 +5,6 @@ const blogRoutes = require('./routes/blogRoutes');
 const dotenv = require("dotenv");
 
 dotenv.config();
-
-
 //express app
 const app  = express();
 
